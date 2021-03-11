@@ -1,0 +1,2 @@
+https://github.com/BlueWhaleRobot/xqserial_server.git
+请手动git切换到lungu分支后catkin_make编译使用

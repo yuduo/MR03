@@ -1,0 +1,15 @@
+1.安装到ROS工作目录
+
+cd ~/Documents/ros/src
+git clone https://github.com/BlueWhaleRobot/xqserial_server.git 
+cd xqserial_server
+git checkout lungu
+cd ..
+cd ..
+catkin_make
+
+2.配置好串口udev规则，重启系统后将串口与系统和驱动器连接好，然后启动xqserial_server节点
+
+roslaunch xqserial_server xqserial.launch
+
+3.现在即可在ROS中使用xqserial_server包发布的话题数据，通过发布/cmd_vel话题给xqserial_server包可以实现电机的转速控制。
